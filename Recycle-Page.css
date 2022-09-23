@@ -638,8 +638,16 @@
   margin-left: 0;
 }
 
+.inactivestate{
+    display:none;
+}
+
+.activeState{
+    display: block !important;
+}
+
 @media (max-width: 1199px) {
-  .u-section-7 .u-form-1 {
+    .u-section-7 .u-form-1 {
     width: 470px;
     margin-right: 211px;
     margin-left: 159px;

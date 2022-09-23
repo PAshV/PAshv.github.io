@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="nicepage.css" media="screen">
     <link rel="stylesheet" href="Recycle-Page.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="recycle.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.18.7, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-    
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": ""
-}</script>
+
+    <script type="application/ld+json">        {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": ""
+        }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Recycle Page">
     <meta property="og:type" content="website">
-  </head>
+</head>
   <body class="u-body u-image u-xl-mode" data-lang="en"> 
     <section class="u-align-center u-clearfix u-image u-section-1" id="sec-6d16" data-image-width="1280" data-image-height="1280">
       <div class="u-clearfix u-sheet u-sheet-1">
@@ -28,7 +29,7 @@
         <p class="u-align-center u-text u-text-2">Recycle your old device, and get exciting reward points<br>
           <br>Just follow this simple steps:<br>
           <span style="font-weight: 700;">
-            <a href="Recycle-Page.html#sec-d8ec" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Step 1:</a> Choose your device type&nbsp;<br>
+            <a href="Recycle-Page.html#sec-d8ec" onclick="beginRecycle();" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1">Step 1:</a> Choose your device type&nbsp;<br>
             <a href="Recycle-Page.html#sec-b832" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2">Step 2:</a> Choose your device brand<br>
             <a href="Recycle-Page.html#carousel_1513" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-3">Step 3</a>: Choose your device model<br>
             <a href="Recycle-Page.html#sec-47ad" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-4">Step 4</a>: Fill out the device specifications<br>Step 5: Fill out the details for pick up<br>Step 6: Collect reward points<br>Step 7: Use reward points to buy new Microsoft products
@@ -40,7 +41,7 @@
         <a href="RecycleRefurbish-HomePage.html" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius-50 u-btn-5">BAck to HOME</a>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-gradient u-section-2" id="sec-d8ec">
+    <section class="u-align-center u-clearfix u-gradient u-section-2 inactivestate cmSec" id="sec-d8ec">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h5 class="u-text u-text-default u-text-1">Select Device Type</h5>
         <div class="u-expanded-width u-list u-list-1">
@@ -48,14 +49,14 @@
             <div class="u-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-file-icon u-icon u-icon-circle u-palette-4-light-2 u-icon-1" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><img src="images/3616437.png" alt=""></span>
                 <h3 class="u-align-center u-text u-text-default u-text-2">
-                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Recycle-Page.html#sec-b832">Laptop</a>
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" onclick="deviceTypeLaptopSel();" href="Recycle-Page.html#sec-b832">Laptop</a>
                 </h3>
               </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item" data-href="Recycle-Page.html#sec-d357">
               <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-file-icon u-icon u-icon-circle u-palette-4-light-2 u-icon-2"><img src="images/771261-42355f50.png" alt=""></span>
                 <h3 class="u-align-center u-text u-text-default u-text-3">
-                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" href="Recycle-Page.html#sec-d357">Console</a>
+                  <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-2" onclick="deviceTypeConsoleSel();" href="Recycle-Page.html#sec-d357">Console</a>
                 </h3>
               </div>
             </div>
@@ -63,14 +64,14 @@
         </div>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-palette-4-light-3 u-section-3" id="sec-b832">
+    <section class="u-align-center u-clearfix u-palette-4-light-3 u-section-3 inactivestate cmSec" id="sec-b832">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h5 class="u-text u-text-default u-text-1">Select Laptop Brand</h5>
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-1">
-                <img alt="" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-1" data-image-width="1280" data-image-height="640" src="images/g38e8114f18a10da3ef027b676ec023dce46482355555caba582b3c13dcb430a01e687a3069bc843ddc0ff53e53a446a2_1280.png" data-href="Recycle-Page.html#carousel_1513">
+                <img alt="" onclick="deviceBrandLaptopSel();" class="u-expanded-width-xs u-image u-image-contain u-image-default u-image-1" data-image-width="1280" data-image-height="640" src="images/g38e8114f18a10da3ef027b676ec023dce46482355555caba582b3c13dcb430a01e687a3069bc843ddc0ff53e53a446a2_1280.png" data-href="Recycle-Page.html#carousel_1513">
               </div>
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
@@ -92,7 +93,7 @@
         </div>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-gradient u-section-4" id="sec-d357">
+    <section class="u-align-center u-clearfix u-gradient u-section-4 inactivestate cmSec" id="sec-d357">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h5 class="u-text u-text-default u-text-1">Select Console Brand</h5>
         <div class="u-expanded-width u-list u-list-1">
@@ -111,80 +112,119 @@
         </div>
       </div>
     </section>
-    <section class="u-align-center u-clearfix u-palette-4-light-3 u-section-5" id="carousel_1513">
+    <section class="u-align-center u-clearfix u-palette-4-light-3 u-section-5 inactivestate cmSec" id="carousel_1513">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h5 class="u-text u-text-default u-text-1">Choose your Laptop Device Model</h5>
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-1">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-1">
-                <p class="u-text u-text-default u-text-2">Surface Book Series</p>
+                  <p class="u-text u-text-default u-text-2">
+                      <a onclick="deviceModelLapSel();" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Recycle-Page.html#sec-47ad">
+                          Surface Book Series
+                          </a>
+                  </p>
               </div>
             </div>
             <div class="u-align-left u-container-style u-list-item u-repeater-item u-list-item-2">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
-                <p class="u-text u-text-default u-text-3">Surface <span style="font-weight: 700;"></span>Laptop Series
-                </p>
+                  <p class="u-text u-text-default u-text-3">
+                      <a onclick="deviceModelLapSel();" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Recycle-Page.html#sec-47ad">
+                          Surface <span style="font-weight: 700;"></span>Laptop Series
+                          </a>
+                  </p>
               </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-3">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3">
-                <p class="u-text u-text-default u-text-4">Surface Pro Series</p>
+                  <p class="u-text u-text-default u-text-4">
+                      <a onclick="deviceModelLapSel();" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Recycle-Page.html#sec-47ad">Surface Pro Series
+                          </a>
+                  </p>
               </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-4">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-4">
-                <p class="u-text u-text-default u-text-5">Surface Go Series</p>
+                  <p class="u-text u-text-default u-text-5">
+                      <a onclick="deviceModelLapSel();" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Recycle-Page.html#sec-47ad">
+                          Surface Go Series
+                          </a>
+                  </p>
               </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item u-list-item-5">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-5">
-                <p class="u-text u-text-default u-text-6">Surface Studio Series</p>
+                  <p class="u-text u-text-default u-text-6">
+                      <a onclick="deviceModelLapSel();" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Recycle-Page.html#sec-47ad">
+                          Surface Studio Series
+                          </a>
+                  </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-gradient u-section-6" id="sec-1633">
+    <section class="u-clearfix u-gradient u-section-6 inactivestate cmSec" id="sec-1633">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h5 class="u-align-center u-text u-text-default u-text-1">Choose your Console Model</h5>
         <div class="u-expanded-width u-list u-list-1">
           <div class="u-repeater u-repeater-1">
             <div class="u-align-left u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-1">
-                <p class="u-text u-text-default u-text-2">XBox Series S</p>
+                  <p class="u-text u-text-default u-text-2">
+                      <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Recycle-Page.html#sec-47ad">XBox Series S</a>
+                  </p>
               </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-2">
-                <p class="u-text u-text-default u-text-3">XBox Series X&nbsp;</p>
+                  <p class="u-text u-text-default u-text-3">
+                      <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Recycle-Page.html#sec-47ad">
+                          XBox Series X&nbsp;
+                          </a>
+                  </p>
               </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-3">
-                <p class="u-text u-text-default u-text-4">XBox One S</p>
+                  <p class="u-text u-text-default u-text-4">
+                      <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Recycle-Page.html#sec-47ad">
+                          XBox One S
+                          </a>
+                  </p>
               </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-4">
-                <p class="u-text u-text-default u-text-5">XBox One X</p>
+                  <p class="u-text u-text-default u-text-5">
+                      <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Recycle-Page.html#sec-47ad">
+                          XBox One X
+                          </a>
+                  </p>
               </div>
             </div>
             <div class="u-align-center u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-valign-middle u-container-layout-5">
-                <p class="u-text u-text-default u-text-6">XBox One</p>
+                  <p class="u-text u-text-default u-text-6">
+                      <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="Recycle-Page.html#sec-47ad">
+                          XBox One
+                          </a>
+                  </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="u-clearfix u-palette-4-light-3 u-section-7" id="sec-47ad">
+    <section class="u-clearfix u-palette-4-light-3 u-section-7 inactivestate cmSec" id="sec-47ad">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h5 class="u-align-center u-text u-text-default u-text-1">Fill out the specifications</h5>
         <div class="u-form u-form-1">
-          <form action="#" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
+          <form action="#" id="recycleForm" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 10px;">
+              <input type="hidden" id="deviceType" value="" />
+              <input type="hidden" id="brand" value=""/>
+              <input type="hidden" id="deviceModel" value=""/>
             <div class="u-form-group u-form-select u-label-top u-form-group-1">
               <label for="select-6fb2" class="u-label">Select the processor</label>
               <div class="u-form-select-wrapper">
@@ -256,14 +296,24 @@
               </div>
             </div>
             <div class="u-align-left u-form-group u-form-submit u-label-top">
-              <a href="#" class="u-btn u-btn-submit u-button-style">Submit</a>
+              <a href="#" onclick="formSubmit();" class="u-btn u-btn-submit u-button-style">Submit</a>
               <input type="submit" value="submit" class="u-form-control-hidden">
             </div>
             <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
-            <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
-            <input type="hidden" value="" name="recaptchaResponse">
           </form>
         </div>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-gradient u-section-8" id="sec-13e7">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h5 class="u-text u-text-default u-text-1">Thank you for sharing the DEtails</h5>
+        <h1 class="u-text u-text-default u-text-2">Vendor Details:</h1>
+        <p class="u-text u-text-3">Clean to Green is the vendor, that we have selected on our behalf. They will be contacting you shortly to collect your device.</p>
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-image u-shading u-section-9" src="" data-image-width="334" data-image-height="335" id="sec-fbb7">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h1 class="u-text u-text-default u-title u-text-1">You are eligible for the Reward points</h1>
       </div>
     </section>
     
@@ -274,5 +324,5 @@
         <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
         <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
     </span>
-  
+
 </body></html>
