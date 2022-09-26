@@ -278,6 +278,34 @@
                                                                  <input type="checkbox" id="checkbox-0bfa" name="checkbox-2" value="On">
                                                                  <label for="checkbox-0bfa" class="u-label">Device is in working condition</label>
                                                              </div>
+                                                             <div class="u-form-group u-form-select u-label-top u-form-group-1">
+                                                                 <label for="select-6qqqq" class="u-label">Select the touch screen defect type</label>
+                                                                 <div class="u-form-select-wrapper">
+                                                                     <select id="select-6qqqq" name="select" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                                                                         <option value="No defect">No Defect</option>
+                                                                         <option value="Minor Spots">Minor Spots</option>
+                                                                         <option value="Minor Lines">Minor Lines</option>
+                                                                         <option value="Major Touch Fault">Major Touch Fault</option>
+                                                                     </select>
+                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                                                                 </div>
+                                                             </div>
+                                                             <div class="u-form-group u-form-select u-label-top u-form-group-1">
+                                                                 <label for="select-6qqqs" class="u-label">Select the defect type</label>
+                                                                 <div class="u-form-select-wrapper">
+                                                                     <select id="select-6qqqs" name="select" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white">
+                                                                         <option value="No defect">No Defect</option>
+                                                                         <option value="Touch Pad Faulty">Touch Pad Faulty</option>
+                                                                         <option value="Front Camera Faulty">Front Camera Faulty</option>
+                                                                         <option value="Speaker Fault">Speaker Faulty</option>
+                                                                         <option value="Mic Fault">Mic Faulty</option>
+                                                                         <option value="Bluetooth Fault">Bluetooth Faulty</option>
+                                                                         <option value="Charging Fault">Charging Faulty</option>
+                                                                         <option value="Keyboard Fault">Keyboard Faulty</option>
+                                                                     </select>
+                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" version="1" class="u-caret"><path fill="currentColor" d="M4 8L0 4h8z"></path></svg>
+                                                                 </div>
+                                                             </div>
                                                              <div class="u-form-group u-form-select u-label-top u-form-group-7">
                                                                  <label for="select-e561" class="u-label">COUNTRY </label>
                                                                  <div class="u-form-select-wrapper">
@@ -305,7 +333,7 @@
                                                                  <a href="#" onclick="formSubmit();" class="u-btn u-btn-submit u-button-style">Submit</a>
                                                                  <input type="submit" value="submit" class="u-form-control-hidden">
                                                              </div>
-                                                             <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                                                             <div class="u-form-send-message u-form-send-success u-succ"> Thank you! Your message has been sent. </div>
                                                          </form>
                                                      </div>
                                                  </div>
@@ -319,10 +347,40 @@
                                              </section>
                                              <section class="u-align-center u-clearfix u-gradient u-section-9  inactivestate cmSec" id="sec-13e7">
                                                  <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-                                                     <h5 class="u-text u-text-default u-text-1">Thank you for sharing the Details</h5>
-                                                     <h1 class="u-text u-text-default u-text-2">Vendor Details:</h1>
-                                                     <p class="u-text u-text-3">Clean to Green is the vendor, that we have selected on our behalf. They will be contacting you shortly to collect your device.</p>
+                                                     <h5 class="u-text u-text-default u-text-1">Vendor Details:</h5>
+                                                     <p class="u-text u-text-3" id="vendorId">Clean to Green is the vendor, that we have selected on our behalf. They will be contacting you shortly to collect your device. Please share your details to proceed forward and recieve credits.</p>
                                                  </div>
+
+                                                
+
+                                                 <section class="u-align-center u-clearfix u-section-10" id="sec-4f60">
+                                                     <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                                                         <h2 class="u-text u-text-default u-text-1">Share your Contact details</h2>
+                                                         <div class="u-form u-form-1">
+                                                             <form action="#" class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form">
+                                                                 <div class="u-form-group u-form-name u-label-none">
+                                                                     <label for="name-3b9a" class="u-label">Name</label>
+                                                                     <input type="text" placeholder="Enter your Name" id="name-3b9a" name="name" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                                                                 </div>
+                                                                 <div class="u-form-email u-form-group u-label-none">
+                                                                     <label for="email-3b9a" class="u-label">Email</label>
+                                                                     <input type="email" placeholder="Enter a valid email address" id="email-3b9a" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                                                                 </div>
+                                                                
+                                                                 <div class="u-form-group u-form-phone u-label-none u-form-group-4">
+                                                                     <label for="phone-0aec" class="u-label">Phone</label>
+                                                                     <input type="tel" pattern="\+?\d{0,3}[\s\(\-]?([0-9]{2,3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="Enter your phone (e.g. +14155552675)" id="phone-0aec" name="phone" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                                                                 </div>
+                                                                 <div class="u-align-left u-form-group u-form-submit">
+                                                                     <a href="#" onclick="formSubmit2();" class="u-btn u-btn-submit u-button-style">Submit</a>
+                                                                     <input type="submit" value="submit" class="u-form-control-hidden">
+                                                                 </div>
+                                                                 <div class="u-form-send-message u-form-send-success  u-succ-2"> Thank you! Your message has been sent. </div>
+                                                               
+                                                             </form>
+                                                         </div>
+                                                     </div>
+                                                 </section>
                                              </section>
 
 

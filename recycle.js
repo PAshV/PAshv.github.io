@@ -28,8 +28,9 @@ function deviceModelLapSel() {
 }
 
 function formSubmit() {
-    $('.u-form-send-message').addClass('activeState');
+    $('.u-succ').addClass('activeState');
     $('#sec-fbb7').addClass('activeState');
+    $('#sec-47ad').removeClass('activeState');
     var rewardPoints = 300;
     if (document.getElementById('checkbox-0bfa').checked) {
         rewardPoints = 500;
@@ -37,4 +38,15 @@ function formSubmit() {
     document.getElementById('rewardPoint').innerHTML = rewardPoints;
 
     $('#sec-13e7').addClass('activeState');
+
+    if (document.getElementById('select-9bff').value == "HYDERABAD") {
+        document.getElementById('vendorId').innerHTML = "Hash Technologies is your vendor, that we have selected on our behalf. They will be contacting you shortly to collect your device."
+    } else if (document.getElementById('select-9bff').value == "BANGALORE") {
+        document.getElementById('vendorId').innerHTML = "Clean To Green is your vendor, that we have selected on our behalf. They will be contacting you shortly to collect your device."
+
+    }
+}
+
+function formSubmit2() {
+    $('.u-succ-2').addClass('activeState');
 }
